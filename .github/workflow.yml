@@ -43,4 +43,4 @@ jobs:
         run: npm install --globle surge
       
       - name: Deploy to surge
-        run: surge ./ reacttt-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build reacttt-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
